@@ -3,9 +3,9 @@
 // If the strings have the same length, then return the first string.
 
 let longer = function (str1, str2) {
-  if (str1.length > str2.length || str1.length === str2.length) {
+  if (str1.length >= str2.length) {
     return str1;
-  } else if (str2.length > str1.length) {
+  } else {
     return str2;
   }
 };

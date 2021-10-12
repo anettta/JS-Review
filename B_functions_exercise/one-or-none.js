@@ -3,9 +3,7 @@
 // arguments is true. If both arguments are true, then it should return false.
 
 let oneOrNone = function (bool1, bool2) {
-  if (bool1 === true && bool2 === true) {
-    return false;
-  } else if (bool1 === true || bool2 === true) {
+  if ((bool1 || bool2) && !(bool1 && bool2)) {
     return true;
   } else {
     return false;

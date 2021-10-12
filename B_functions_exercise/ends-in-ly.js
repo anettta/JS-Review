@@ -2,8 +2,18 @@
 // and returns a boolean indicating whether or not the string
 // ends in the substring 'ly'.
 
+// let endsInLy = function (str) {
+//   return str.slice(-2) === "ly";
+// };
+
+// let endsInLy = function (str) {
+//   return str.endsWith("ly");
+// };
+
 let endsInLy = function (str) {
-  return str.slice(str.length - 2) === "ly";
+  let secondLast = str[str.length - 2];
+  let last = str[str.length - 1];
+  return secondLast === "l" && last === "y";
 };
 
 console.log(endsInLy("pretty")); // false

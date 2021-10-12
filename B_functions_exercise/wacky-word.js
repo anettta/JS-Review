@@ -7,7 +7,7 @@
 
 let wackyWord = function (str1, str2) {
   let firstPart = str1.slice(0, 3);
-  let secondPart = str2.slice(str2.length - 2);
+  let secondPart = str2.slice(-2);
   return firstPart + secondPart;
 };
 
