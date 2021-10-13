@@ -4,7 +4,7 @@
 // version of the string if the boolean is false.
 
 let caseChanger = function (str, bool) {
-  if (bool === true) {
+  if (bool) {
     return str.toUpperCase();
   } else {
     return str.toLowerCase();
