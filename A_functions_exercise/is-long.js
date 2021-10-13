@@ -2,12 +2,16 @@
 // The function should return a boolean indicating whether
 // or not the string is longer than 5 characters
 
+// let isLong = function (str) {
+//   if (str.length > 5) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
 let isLong = function (str) {
-  if (str.length > 5) {
-    return true;
-  } else {
-    return false;
-  }
+  return str.length > 5;
 };
 
 console.log(isLong("pie")); // false
