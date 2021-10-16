@@ -12,4 +12,4 @@ let stringRepeater = function (str, num) {
 };
 
 console.log(stringRepeater("q", 4)); // 'qqqq`
-console.log(stringRepeater("go", 5));
+console.log(stringRepeater("go", 5)); // 'gogogogogo'
