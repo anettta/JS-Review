@@ -5,16 +5,12 @@
 // Vowels are the letters a,e,i,o,u.
 
 let bleepVowels = function (str) {
+  let vowels = ["a", "e", "i", "o", "u"];
   let newStr = "";
 
   for (let i = 0; i < str.length; i++) {
-    if (
-      str[i] === "a" ||
-      str[i] === "e" ||
-      str[i] === "i" ||
-      str[i] === "o" ||
-      str[i] === "u"
-    ) {
+    if (vowels.indexOf(str[i]) > -1) {
+      // index // if true it exists
       newStr += "*";
     } else {
       newStr += str[i];

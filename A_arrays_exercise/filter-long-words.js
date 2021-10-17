@@ -6,7 +6,7 @@ let filterLongWords = function (arr) {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
     let word = arr[i];
-    if (word.length > 5) {
+    if (word.length < 5) {
       newArr.push(word);
     }
   }
