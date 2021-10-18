@@ -3,12 +3,13 @@
 
 let makeAcronym = function (str) {
   let newStr = "";
-  let arr = str.split(" ");
-  for (let i = 0; i < arr.length; i++) {
-    newStr += arr[i][0];
+  let words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    newStr += word[0];
   }
-  return newStr;
+  return newStr.toUpperCase();
 };
 
 console.log(makeAcronym("New York"));
-console.log(makeAcronym("Laugh out loud"));
+console.log(makeAcronym("laugh out loud"));
