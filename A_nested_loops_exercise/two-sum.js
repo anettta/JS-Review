@@ -20,3 +20,5 @@ let twoSum = function (numbers, target) {
 
 console.log(twoSum([2, 3, 5, 9], 7)); // true
 console.log(twoSum([2, 3, 5, 9], 4)); // false
+console.log(twoSum([6, 3, 4], 10)); // true
+console.log(twoSum([6, 5, 1], 10)); // false
