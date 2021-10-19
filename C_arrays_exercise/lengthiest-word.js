@@ -8,9 +8,7 @@ let lengthiestWord = function (sentence) {
   let longest = "";
   let arr = sentence.split(" ");
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].length === longest.length) {
-      return arr[i];
-    } else if (arr[i].length > longest.length) {
+    if (arr[i].length >= longest.length) {
       longest = arr[i];
     }
   }

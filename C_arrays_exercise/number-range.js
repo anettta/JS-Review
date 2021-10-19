@@ -6,7 +6,7 @@
 
 let numberRange = function (min, max, step) {
   let arr = [];
-  for (let i = min; i <= max; i += 5) {
+  for (let i = min; i <= max; i += step) {
     arr.push(i);
   }
   return arr;
